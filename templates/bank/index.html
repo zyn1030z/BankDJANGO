@@ -1,0 +1,22 @@
+{% extends 'bank/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <table class="table">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Email</th>
+                <th scope="col">Số tài khoản</th>
+                <th scope="col">Số dư</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>{{ user.email }}</td>
+                <td>{{ user.bank_number }}</td>
+                <td>{{ user.money }} VND</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
