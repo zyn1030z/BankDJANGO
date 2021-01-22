@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css"
           integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous">
-    <title>BlogRoom</title>
+    <title>Bank</title>
 </head>
 <body>
 <header class="site-header">
@@ -33,7 +33,7 @@
                         <a class="nav-item nav-link" href="{% url 'transfer_money' %}">Chuyển tiền</a>
                         <a class="nav-item nav-link" href="{% url 'check_money' %}">Kiểm tra số dư</a>
                         <a class="nav-item nav-link" href="">Lịch sử giao dịch</a>
-                        <a class="nav-item nav-link" href="">Đổi mật khẩu</a>
+                        <a class="nav-item nav-link" href="{% url 'change_pass' %}">Đổi mật khẩu</a>
                         <a class="nav-item nav-link" href="{% url 'logout' %}">Đăng xuất</a>
                     {% else %}
                         <a class="nav-item nav-link" href="{% url 'login' %}">Đăng nhập</a>
